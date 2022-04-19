@@ -1,0 +1,16 @@
+s1,s2=input(). split()
+
+count=0
+l1=len(s1)
+l2=len(s2)
+if(l1>l2):
+    count=l1-l2
+    for i in range(0, l2):
+        if(s1[i]!=s2[i]):
+            count+=1
+else:
+    count=l2-l1
+    for i in range(0,l1):
+        if(s1[i]!=s2[i]):
+            count+=1
+print(count)
